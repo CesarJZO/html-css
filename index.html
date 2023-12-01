@@ -2,8 +2,9 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8"> <!-- This is the character encoding -->
   <meta name="viewport" content="width=device-width">
+  <!-- This is the viewport, it's used to fit the page to the device's screen -->
   <meta name="theme-color" content="#0f4bb0"> <!-- This is the color of the address bar -->
 
   <!-- OPEN GRAPH -->
@@ -12,11 +13,15 @@
   <meta property="og:image" content="./images/me.jpg">
 
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- This is the favicon, it's the icon that appears in the browser tab -->
 
   <link rel="canonical" href="https://cesarjzo.dev">
+  <!-- This is the canonical link, it's used to tell search engines that this is the main page -->
 
   <title>C&eacute;sar Z&aacute;rate - Developer</title>
+  <!-- This is the title of the page, it appears in the browser tab -->
   <meta name="description" content="C&eacute;sar Z&aacute;rate Portfolio, software developer">
+  <!-- This is the description of the page, it appears in the search results -->
 </head>
 
 <body>
@@ -31,8 +36,9 @@
       <!-- Rel="noreferrer" is used to prevent the browser from sending the referrer header -->
     </nav>
   </header>
-  
-  <main> <!-- Main is used for the main content of the page. Itshould be used only once per page and for content that is unique to the page -->
+
+  <main>
+    <!-- Main is used for the main content of the page. Itshould be used only once per page and for content that is unique to the page -->
     <p>
       2 years of experience in game development. I've worked on 2D and 3D games, using Unity and Unreal Engine. I've
       also
@@ -48,8 +54,10 @@
       <li class="item">Instituto Tecnol&oacute;gico de Saltillo</li>
     </ul>
 
-    <img id="profile-picture" src="./images/me.jpg" title="My profile picture"
-      alt="A picture of me where I'm looking at the camera">
+    <a download href="./images/me.jpg">
+      <img id="profile-picture" src="./images/me.jpg" title="My profile picture"
+        alt="A picture of me where I'm looking at the camera">
+    </a>
 
     <h2 id="projects">Projects</h2>
 
@@ -86,6 +94,11 @@
 
   <footer>
     Copyright © 2023 - CesarJZO
+
+    <address>
+      <a href="mailto:cesarjzo@outlook.com">Email me!</a>
+      <a href="tel:+525555555555">Call me!</a>
+    </address>
   </footer>
 </body>
 
