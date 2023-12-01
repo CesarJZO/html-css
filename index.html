@@ -128,6 +128,26 @@
             <input type="tel" name="phone" placeholder="+525555555555">
           </label>
         </fieldset>
+
+        <fieldset>
+          <legend>Others</legend>
+          <label for="why">Why you want to contact me?</label>
+          <select name="why" id="why">
+            <option value="job">Job opportunity</option>
+            <option value="project">Project</option>
+            <option value="other">Other</option>
+          </select>
+
+          <datalist id="languages">
+            <option value="C#">
+            <option value="Git">
+            <option value=".NET">
+          </datalist>
+          <label>
+            What technologies do you know?
+            <input list="languages" name="languages">
+          </label>
+        </fieldset>
         <input type="submit" value="Send contact">
       </form>
     </section>
