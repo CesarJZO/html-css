@@ -20,56 +20,73 @@
 </head>
 
 <body>
-  <h1>C&eacute;sar Z&aacute;rate</h1>
+  <header>
+    <h1>C&eacute;sar Z&aacute;rate</h1>
 
-  <p>
-    2 years of experience in game development. I've worked on 2D and 3D games, using Unity and Unreal Engine. I've also
-    worked on web development using React and Node.js.
-  </p>
+    <nav>
+      <a href="#experience">Experience</a> <!-- Inner link -->
+      <a href="#projects">Projects</a>
+      <a href="https://github.com/CesarJZO" target="_blank" rel="noreferrer">GitHub</a> <!-- Outer link -->
+      <!-- Target="_blank" opens the link in a new tab -->
+      <!-- Rel="noreferrer" is used to prevent the browser from sending the referrer header -->
+    </nav>
+  </header>
+  
+  <main> <!-- Main is used for the main content of the page. Itshould be used only once per page and for content that is unique to the page -->
+    <p>
+      2 years of experience in game development. I've worked on 2D and 3D games, using Unity and Unreal Engine. I've
+      also
+      worked on web development using React and Node.js.
+    </p>
 
-  <h2>Experiencia</h2>
+    <h2 id="experience">Experience</h2>
 
-  <ul>
-    <li class="item">Playstorm</li>
-    <li class="item">Meow Interactive</li>
-    <li class="item">UCamp</li>
-    <li class="item">Instituto Tecnol&oacute;gico de Saltillo</li>
-  </ul>
+    <ul>
+      <li class="item">Playstorm</li>
+      <li class="item">Meow Interactive</li>
+      <li class="item">UCamp</li>
+      <li class="item">Instituto Tecnol&oacute;gico de Saltillo</li>
+    </ul>
 
-  <img id="profile-picture" src="./images/me.jpg" title="My profile picture"
-    alt="A picture of me where I'm looking at the camera">
+    <img id="profile-picture" src="./images/me.jpg" title="My profile picture"
+      alt="A picture of me where I'm looking at the camera">
 
-  <h2>Projects</h2>
+    <h2 id="projects">Projects</h2>
 
-  <aside> <!-- Aside is used for content that is related to the main content -->
-    <header> <!-- Header is used for the header of a section -->
-      <h3>Technologies I know</h3>
-    </header>
-
-    <ol>
-      <li>Unity</li>
-      <li>Git</li>
-      <li>React</li>
-      <li>.NET</li>
-    </ol>
-  </aside>
-
-  <section>
-    <article> <!-- Article is used for a section of the page that could stand alone -->
-      <header>
-        <h4>Course platform</h4>
+    <aside> <!-- Aside is used for content that is related to the main content -->
+      <header> <!-- Header is used for the header of a section -->
+        <h3>Technologies I know</h3>
       </header>
-      <p>
-        Developed a course platform for a client. The platform allows the client to upload courses and students to buy
-        and consume courses.
-      </p>
-      <footer>
-        <small> <!-- Small is used for copyright or something like an clarification -->
-          Tools used: React, Firebase, Node, Stripe
-        </small>
-      </footer>
-    </article>
-  </section>
+
+      <ol>
+        <li>Unity</li>
+        <li>Git</li>
+        <li>React</li>
+        <li>.NET</li>
+      </ol>
+    </aside>
+
+    <section>
+      <article> <!-- Article is used for a section of the page that could stand alone -->
+        <header>
+          <h4>Course platform</h4>
+        </header>
+        <p>
+          Developed a course platform for a client. The platform allows the client to upload courses and students to buy
+          and consume courses.
+        </p>
+        <footer>
+          <small> <!-- Small is used for copyright or something like an clarification -->
+            Tools used: React, Firebase, Node, Stripe
+          </small>
+        </footer>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    Copyright © 2023 - CesarJZO
+  </footer>
 </body>
 
 </html>
