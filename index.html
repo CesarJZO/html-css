@@ -31,6 +31,8 @@
     <nav>
       <a href="#experience">Experience</a> <!-- Inner link -->
       <a href="#projects">Projects</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
       <a href="https://github.com/CesarJZO" target="_blank" rel="noreferrer">GitHub</a> <!-- Outer link -->
       <!-- Target="_blank" opens the link in a new tab -->
       <!-- Rel="noreferrer" is used to prevent the browser from sending the referrer header -->
@@ -107,7 +109,26 @@
     </section>
 
     <section>
-      <h2>Contact form</h2>
+      <h2 id="faq">Frequently asked questions</h2>
+
+      <details open> <!-- Used for a section that can be toggled to hide or show the content -->
+        <summary>What is your favorite color?</summary> <!-- Used for the summary of a details element -->
+        <p>My favorite color is purple.</p>
+      </details>
+
+      <details>
+        <summary>What is your favorite food?</summary>
+        <p>My favorite food is pizza.</p>
+      </details>
+
+      <details>
+        <summary>What is your favorite animal?</summary>
+        <p>My favorite animal is the cat.</p>
+      </details>
+    </section>
+
+    <section>
+      <h2 id="contact">Contact form</h2>
       <form method="post" action="/"> <!-- Form is used for forms, it can be used to send data to a server -->
         <fieldset>
           <legend>
