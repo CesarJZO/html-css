@@ -1,0 +1,16 @@
+body {
+    background-color: #f0f0f0;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    /* color: black; */
+    /* color: #f0f0f0; */
+    /* color: rgb(0 0 0 / 0.5); */
+    color: hsl(230, 30%, 30%);
+    border-width: 3px;
+    border-style: solid;
+    border-color: currentColor;
+}
