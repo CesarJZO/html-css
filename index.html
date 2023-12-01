@@ -39,6 +39,8 @@
     </nav>
   </header>
 
+  <video autoplay muted loop controls src="https://sample-videos.com/video123/mp4/480/big_buck_bunny_480p_1mb.mp4"></video>
+
   <main>
     <!-- Main is used for the main content of the page. Itshould be used only once per page and for content that is unique to the page -->
     <p>
@@ -57,8 +59,9 @@
     </ul>
 
     <a download href="./images/me.jpg">
-      <img id="profile-picture" src="./images/me.jpg" title="My profile picture"
+      <img loading="lazy" id="profile-picture" src="./images/me.jpg" title="My profile picture"
         alt="A picture of me where I'm looking at the camera">
+        <!-- Loading="lazy" is used to lazy load the image, it's used to improve performance. This means that the image will be loaded only when it's visible in the viewport -->
     </a>
 
     <h2 id="projects">Projects</h2>
