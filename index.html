@@ -95,7 +95,8 @@
           <h4>Eagle Knight Paradox</h4>
         </header>
         <p>
-          Developed a 2D platformer game for PC. The game is a metroidvania with a focus on combat. On <strong>Playstorm studios</strong>.
+          Developed a 2D platformer game for PC. The game is a metroidvania with a focus on combat. On <strong>Playstorm
+            studios</strong>.
         </p>
         <footer>
           <small>
@@ -112,16 +113,23 @@
           <legend>
             Personal info
           </legend>
-          
-          <label for="name">Name</label> <!-- Label is used for labels, it's used to associate a label with an input using the for attribute in combination with the id attribute of the input -->
-          <input type="text" id="name" name="name" placeholder="C&eacute;sar Z&aacute;rate">
+
+          <label for="name">Name</label>
+          <!-- Label is used for labels, it's used to associate a label with an input using the for attribute in combination with the id attribute of the input -->
+          <input type="text" id="name" name="name" placeholder="C&eacute;sar Z&aacute;rate" required>
 
           <label> <!-- This label is associated with the email input because it's inside the label -->
             Email
-            <input type="email" name="email" placeholder="cesar@dev.com">
+            <input type="tel" name="email" placeholder="cesar@dev.com" required>
+          </label>
+
+          <label>
+            Phone number
+            <input type="tel" name="phone" placeholder="+525555555555">
           </label>
         </fieldset>
-        </form>
+        <input type="submit" value="Send contact">
+      </form>
     </section>
   </main>
 
