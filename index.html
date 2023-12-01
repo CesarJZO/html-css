@@ -104,6 +104,25 @@
         </footer>
       </article>
     </section>
+
+    <section>
+      <h2>Contact form</h2>
+      <form method="post" action="/"> <!-- Form is used for forms, it can be used to send data to a server -->
+        <fieldset>
+          <legend>
+            Personal info
+          </legend>
+          
+          <label for="name">Name</label> <!-- Label is used for labels, it's used to associate a label with an input using the for attribute in combination with the id attribute of the input -->
+          <input type="text" id="name" name="name" placeholder="C&eacute;sar Z&aacute;rate">
+
+          <label> <!-- This label is associated with the email input because it's inside the label -->
+            Email
+            <input type="email" name="email" placeholder="cesar@dev.com">
+          </label>
+        </fieldset>
+        </form>
+    </section>
   </main>
 
   <footer>
