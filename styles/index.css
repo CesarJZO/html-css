@@ -48,7 +48,15 @@ li:last-child {
     color: #FF5733;
 }
 
+/** Operators */
+
+/* Child combinator */
 main>p {
     /* direct child */
     color: #DAF7A6;
+}
+
+/* General sibling combinator */
+p~span {
+    color: #FFC300;
 }
