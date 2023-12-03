@@ -39,3 +39,11 @@ h1 {
     color: #FF5733;
     outline: 2px dashed #FF5733;
 }
+
+li:first-child {
+    color: #FFC300;
+}
+
+li:last-child {
+    color: #FF5733;
+}
