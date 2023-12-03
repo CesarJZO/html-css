@@ -23,6 +23,12 @@ h1 {
     border-radius: 4px;
 }
 
+.container {
+    height: 250px;
+    width: 250px;
+    background-color: #C70039;
+}
+
 .link {
     color: #FFC300;
     padding: 4px;
@@ -48,7 +54,7 @@ li:last-child {
     color: #FF5733;
 }
 
-/** Operators */
+/* Operators */
 
 /* Child combinator */
 main>p {
