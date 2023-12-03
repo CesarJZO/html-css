@@ -4,12 +4,12 @@ body {
 }
 
 .parent {
-    display: block;
     border: #FFC300 4px solid;
     border-radius: 4px;
-    padding: 8px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    direction: rtl;
+    writing-mode: vertical-lr;
 }
 
 .item {
@@ -20,7 +20,7 @@ body {
     width: 100px;
     height: 100px;
     box-sizing: border-box;
-    margin: 4px 0px;
+    margin: 8px;
 }
 
 .item:first-child {
