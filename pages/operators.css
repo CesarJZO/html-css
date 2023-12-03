@@ -1,0 +1,17 @@
+/* Child combinator */
+main>p {
+    /* direct child */
+    color: #DAF7A6;
+}
+
+/* General sibling combinator */
+p~span {
+    /* Anywhere after */
+    color: #FFC300;
+}
+
+/* Adjacent sibling combinator */
+p+span {
+    /* Immediately after */
+    color: #FF5733;
+}
