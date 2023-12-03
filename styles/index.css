@@ -21,3 +21,7 @@ h1 {
     border: 0;
     border-radius: 4px;
 }
+
+.description {
+    border: 1px solid red;
+}
