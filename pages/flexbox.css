@@ -6,10 +6,13 @@ body {
 .parent {
     border: #FFC300 4px solid;
     border-radius: 4px;
-    display: flex;
-    /* flex-direction: column; */
-    direction: rtl;
-    writing-mode: vertical-lr;
+    display: flex; /* Flex means that the children will be displayed in a row or column depending on the value of flex-direction */
+    flex-direction: column;
+    /* direction: rtl; */
+    /* writing-mode: vertical-lr; */
+    /* flex-wrap: nowrap; */
+    flex-flow: row nowrap;
+    width: 256px;
 }
 
 .item {
@@ -17,10 +20,14 @@ body {
     border: 2px dashed;
     border-radius: 2px;
     padding: 2px;
-    width: 100px;
+    /* width: 50px; */
     height: 100px;
     box-sizing: border-box;
-    margin: 8px;
+    /* margin: 8px; */
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
 }
 
 .item:first-child {
