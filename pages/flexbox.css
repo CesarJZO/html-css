@@ -12,7 +12,7 @@ body {
     /* writing-mode: vertical-lr; */
     /* flex-wrap: nowrap; */
     flex-flow: row nowrap;
-    width: 256px;
+    /* width: 300px; */
 }
 
 .item {
@@ -25,9 +25,7 @@ body {
     box-sizing: border-box;
     /* margin: 8px; */
 
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0;
+    flex: 1;
 }
 
 .item:first-child {
@@ -36,6 +34,7 @@ body {
 
 .item:nth-child(2) {
     background-color: #C70039;
+    flex: 2;
 }
 
 .item:last-child {
