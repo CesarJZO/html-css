@@ -24,18 +24,18 @@ h1 {
 }
 
 .container {
-    display: block;
+    /* display: inline-block; */
     height: 250px;
     width: 250px;
     background-color: #C70039;
-    padding: 4px;
-    border: 16px solid #FFC300;
+    padding: 16px;
+    border: 4px solid #FFC300;
     margin: 8px;
     box-sizing: border-box;
     /* This makes the padding and border part of the width and height, so the final size is the same as the specified size. */
 }
 
-.inner {
+.content {
     height: 100%;
     width: 100%;
     /* background-color: #581845; */
