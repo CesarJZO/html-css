@@ -47,3 +47,8 @@ li:first-child {
 li:last-child {
     color: #FF5733;
 }
+
+main>p {
+    /* direct child */
+    color: #DAF7A6;
+}
