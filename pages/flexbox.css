@@ -7,7 +7,9 @@ body {
     display: block;
     border: #FFC300 4px solid;
     border-radius: 4px;
-    padding: 8px
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 .item {
@@ -18,7 +20,7 @@ body {
     width: 100px;
     height: 100px;
     box-sizing: border-box;
-    display: inline-block;
+    margin: 4px 0px;
 }
 
 .item:first-child {
