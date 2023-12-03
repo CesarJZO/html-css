@@ -1,6 +1,12 @@
 # CSS
 
+## Display
+
+The difference between `inline` and `block` elements is that `inline` elements do not start on a new line. They only take up as much width as necessary. And `block` elements start on a new line and take up the full width available.
+
 ## Units
+
+Units are used to specify the size of elements. There are two types of units: *relative* and *absolute*.
 
 ### Relative Units
 
