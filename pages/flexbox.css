@@ -15,9 +15,8 @@ body {
     flex-flow: row wrap;
     /* width: 300px; */
     height: 256px;
-    justify-content: center;
+    justify-content: flex-end;
     align-content: flex-start;
-    align-items: center;
     gap: 16px;
 }
 
@@ -30,16 +29,20 @@ body {
     height: 50px;
     box-sizing: border-box;
     /* margin: 8px; */
+    align-self: center;
 }
 
 .item:first-child {
     background-color: #FF5733;
+    height: 10px;
 }
 
 .item:nth-child(2) {
     background-color: #C70039;
+    height: 20px;
 }
 
 .item:last-child {
     background-color: #900C3F;
+    height: 30px;
 }
