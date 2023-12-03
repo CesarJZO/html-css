@@ -1,0 +1,34 @@
+body {
+    color: #DAF7A6;
+    font-weight: bolder;
+}
+
+.parent {
+    display: block;
+    border: #FFC300 4px solid;
+    border-radius: 4px;
+    padding: 8px
+}
+
+.item {
+    opacity: 75%;
+    border: 2px dashed;
+    border-radius: 2px;
+    padding: 2px;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.item:first-child {
+    background-color: #FF5733;
+}
+
+.item:nth-child(2) {
+    background-color: #C70039;
+}
+
+.item:last-child {
+    background-color: #900C3F;
+}
