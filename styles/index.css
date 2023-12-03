@@ -5,6 +5,13 @@ body {
     padding: 0;
 }
 
+.top-bar {
+    background-color: #C70039;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 h1 {
     /* color: black; */
     /* color: #f0f0f0; */

@@ -27,7 +27,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="top-bar">
     <h1>C&eacute;sar Z&aacute;rate</h1>
 
     <nav>
@@ -48,30 +48,6 @@
 
   <!-- <video autoplay muted loop controls
     src="https://sample-videos.com/video123/mp4/480/big_buck_bunny_480p_1mb.mp4"></video> -->
-
-  <dialog id="modal">
-    <h1>
-      This is a dialog
-    </h1>
-    <p>
-      This is a dialog, it's used to show a modal to the user.
-    </p>
-    <button id="hide">Close</button>
-  </dialog>
-
-  <button id="show">Open modal!</button>
-
-  <script>
-    // show is the id of the button that opens the modal
-    // and it can be used directly because of the id
-    window.show.addEventListener('click', () => {
-      window.modal.showModal();
-    });
-
-    window.hide.addEventListener('click', () => {
-      window.modal.close();
-    });
-  </script>
 
   <main>
     <!-- Main is used for the main content of the page. It should be used only once per page and for content that is unique to the page -->
@@ -222,6 +198,8 @@
     </section>
   </main>
 
+  <button id="show">Open modal!</button>
+
   <footer>
     Copyright © 2023 - CesarJZO
 
@@ -230,6 +208,28 @@
       <a class="link" href="tel:+525555555555">Call me!</a>
     </address>
   </footer>
+
+  <dialog id="modal">
+    <h1>
+      This is a dialog
+    </h1>
+    <p>
+      This is a dialog, it's used to show a modal to the user.
+    </p>
+    <button id="hide">Close</button>
+  </dialog>
+
+  <script>
+    // show is the id of the button that opens the modal
+    // and it can be used directly because of the id
+    window.show.addEventListener('click', () => {
+      window.modal.showModal();
+    });
+
+    window.hide.addEventListener('click', () => {
+      window.modal.close();
+    });
+  </script>
 </body>
 
 </html>
