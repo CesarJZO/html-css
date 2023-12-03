@@ -1,5 +1,20 @@
 # CSS
 
+- [Syntax](#syntax)
+- [Display](#display)
+- [Units](#units)
+    - [Relative Units](#relative-units)
+    - [Absolute Units](#absolute-units)
+- [Flexbox](#flexbox)
+
+## Syntax
+
+```css
+selector {
+    property: value;
+}
+```
+
 ## Display
 
 The difference between `inline` and `block` elements is that `inline` elements do not start on a new line. They only take up as much width as necessary. And `block` elements start on a new line and take up the full width available.
@@ -33,3 +48,22 @@ Units are used to specify the size of elements. There are two types of units: *r
 - `pc` - Picas (1pc = 12pt = 1/6in)
 - `pt` - Points (1pt = 1/72nd of 1in)
 - `px` - Pixels (1px = 1/96th of 1in)
+
+## Flexbox
+
+Flexbox is a one-dimensional layout method for laying out items in rows or columns. Items flex to fill additional space and shrink to fit into smaller spaces. Flexbox is a single-direction layout concept. Think of flexbox as a way to lay out items in a single dimension either as a row or a column.
+
+### Properties
+
+- `display: flex;` - Defines a flex container
+- `flex-direction: row | row-reverse | column | column-reverse;` - Defines the direction of the main axis
+- `flex-wrap: nowrap | wrap | wrap-reverse;` - Defines whether the flex items are forced in a single line or can be flowed into multiple lines
+- `flex-flow: <flex-direction> || <flex-wrap>;` - A shorthand property for the `flex-direction` and `flex-wrap` properties
+- `justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;` - Defines the alignment along the main axis
+- `flex-grow: <number>;` - Defines how much the flex item will grow relative to the rest of the flex items
+    - By default, all flex items have a `flex-grow` value of `0`
+- `flex-shrink: <number>;` - Defines how the flex item will shrink relative to the rest of the flex items
+    - By default, all flex items have a `flex-shrink` value of `1`
+- `flex-basis: <length> | auto;` - Defines the initial length of a flex item
+    - By default, all flex items have a `flex-basis` value of `auto`
+
