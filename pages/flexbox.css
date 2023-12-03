@@ -30,13 +30,16 @@ body {
 
 .item:first-child {
     background-color: #FF5733;
+    order: 3;
 }
 
 .item:nth-child(2) {
     background-color: #C70039;
     flex: 2;
+    order: 1;
 }
 
 .item:last-child {
     background-color: #900C3F;
+    order: 2;
 }
