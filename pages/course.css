@@ -1,0 +1,40 @@
+.main-top-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #C70039;
+}
+
+.user-actions {
+    display: flex;
+    gap: 16px;
+}
+
+button {
+    width: 92px;
+}
+
+button:hover {
+    background-color: #FF5733;
+    outline: 2px solid #FFC300;
+}
+
+.primary-button {
+    background-color: #FFC300;
+    color: #221628;
+    border: 2px solid #FFC300;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: #FFC300;
+    border: 2px solid #FFC300;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
