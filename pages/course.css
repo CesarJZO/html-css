@@ -37,12 +37,19 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 16px;
 }
 
 .course-actions div {
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+.course-actions img {
+    flex-grow: 1;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 .module-table {
