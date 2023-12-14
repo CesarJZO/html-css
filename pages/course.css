@@ -1,20 +1,53 @@
-:root {
-    color-scheme: dark;
+:root[data-theme="light"] {
+    --text: #13121c;
+    --background: #e8e6f0;
+    --background-secondary: #dcdae5;
+    --background-tertiary: #c5c1d3;
+    --primary: #3c3460;
+    --primary-transparent: #3c346080;
+    --secondary: #9e94cc;
+    --secondary-transparent: #9e94cc80;
+    --accent: #ba830d;
+    --accent-transparent: #ba830d80;
 }
 
-body {
+:root[data-theme="dark"] {
+    --text: #e5e4ed;
+    --background: #110f19;
+    --background-secondary: #1b1925;
+    --background-tertiary: #2f2c3e;
+    --primary: #a69ecb;
+    --primary-transparent: #a69ecb80;
+    --secondary: #3d336b;
+    --secondary-transparent: #3d336b80;
+    --accent: #f2bc46;
+    --accent-transparent: #f2bc4680;
+}
+
+body {    
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    background-color: var(--background);
+    color: var(--text);
 }
 
 main {
     margin: 0 64px;
 }
 
+a {
+    color: var(--primary);
+}
+
+a:hover {
+    color: var(--accent);
+}
+
 hr {
     margin: 0;
     margin-top: 32px;
-    border: 2px solid #FFC300;
+    border: 2px solid var(--primary);
     border-radius: 4px;
 }
 
@@ -24,13 +57,21 @@ button {
 }
 
 button:hover {
-    background-color: #FF5733;
-    outline: 2px solid #FFC300;
+    cursor: pointer;
+}
+
+.loading-logo {
+    color: var(--primary);
 }
 
 .course-summary {
     display: flex;
+    justify-content: space-between;
     gap: 16px;
+}
+
+.course-summary section {
+    max-width: 50%;
 }
 
 .course-actions {
@@ -47,14 +88,15 @@ button:hover {
 }
 
 .course-actions img {
+    max-height: 100%;
     flex-grow: 1;
     object-fit: cover;
     border-radius: 4px;
 }
 
 .module-table {
-    outline: 2px solid #FFC300;
-    background-color: #221628;
+    outline: 2px solid var(--text);
+    background-color: var(--background-secondary);
 }
 
 .module-header {
@@ -62,8 +104,8 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     padding: 0px 32px;
-    outline: 2px solid #FFC300;
-    background-color: #FF5733;
+    outline: 2px solid var(--text);
+    background-color: var(--background-tertiary);
 }
 
 .module-content ul {
@@ -96,7 +138,7 @@ button:hover {
 }
 
 .primary-button {
-    background-color: #FFC300;
+    background-color: var(--accent);
     color: #221628;
     border: 0;
     border-radius: 4px;
@@ -106,13 +148,22 @@ button:hover {
     box-sizing: border-box;
 }
 
+.primary-button:hover {
+    background-color: var(--accent-transparent);
+}
+
 .secondary-button {
     background-color: transparent;
-    color: #FFC300;
-    border: 2px solid #FFC300;
+    color: var(--accent);
+    border: 2px solid var(--accent);
     border-radius: 4px;
     padding: 4px;
     font-size: 16px;
     font-weight: bold;
     box-sizing: border-box;
+}
+
+.secondary-button:hover {
+    color: var(--accent-transparent);
+    border: 2px solid var(--accent-transparent);
 }
