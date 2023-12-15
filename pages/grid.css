@@ -1,0 +1,18 @@
+:root {
+    color-scheme: light dark;
+}
+
+.container {
+    background-color: #7e5bdd;
+    border: 2px solid white;
+    border-radius: 16px;
+
+    display: grid;
+    grid-template-columns: auto 64px 128px;
+}
+
+.container div {
+    background-color: #b19af1;
+    border: 2px solid #2b1f4b;
+    border-radius: 8px;
+}
