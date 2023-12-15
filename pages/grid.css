@@ -5,10 +5,10 @@
 .container {
     background-color: #7e5bdd;
     border: 2px solid white;
-    border-radius: 16px;
+    border-radius: 8px;
 
     display: grid;
-    grid-template-columns: auto 64px 128px;
+    grid-template-columns: 50% 128px auto 10vw;
 }
 
 .container div {
