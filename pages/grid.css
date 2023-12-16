@@ -9,8 +9,8 @@ img {
 }
 
 .container {
-    background-color: #7e5bdd;
-    border: 2px solid white;
+    background-color: transparent;
+    /* border: 2px solid white; */
     border-radius: 8px;
     overflow: hidden;
     
@@ -19,8 +19,8 @@ img {
     grid-template-rows: repeat(5, 1fr); */
     display: grid;
     grid-template-columns: repeat(
-        auto-fill,
-        minmax(256px, 1fr)
+        auto-fit,
+        minmax(128px, 1fr)
     );
     /* grid-column-gap: 8px;
     grid-row-gap: 16px; */
