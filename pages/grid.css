@@ -9,7 +9,7 @@
     border-radius: 8px;
 
     display: grid;
-    grid-template-columns: 64px repeat(2, 1fr) 64px;
+    grid-template-columns: repeat(2, 1fr 2fr);
     grid-auto-rows: 32px;
     grid-template-rows: repeat(5, 1fr);
 }
