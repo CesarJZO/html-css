@@ -31,3 +31,17 @@ img {
     gap: 8px;
     padding: 8px;
 }
+
+.container div {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgray;
+    border-radius: 4px;
+}
+
+.container div:first-child {
+    background-color: gray;
+    grid-column: 1 / -1;
+}
