@@ -16,16 +16,20 @@ body {
     display: grid;
     padding: 8px;
     gap: 16px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(256px, 1fr)
+    );
 }
 
 .container div {
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0px 0px 8px #0002;
+    box-shadow: 0px 2px 8px #0002;
     
     padding: 0 32px;
     min-height: 128px;
+    height: 100%;
 }
 
 .container div:first-child {
