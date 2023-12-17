@@ -1,4 +1,4 @@
-const toggleThemeButton = document.querySelector('.toggle-button');
+const toggleThemeButton = document.getElementById('toggle-theme');
 
 document.documentElement.setAttribute('data-theme', 'dark');
 toggleThemeButton.addEventListener('click', function () {
