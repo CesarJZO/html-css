@@ -12,19 +12,27 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+    grid-template-areas:
+        "header header header"
+        "content content sidebar"
+        "footer footer footer";
 }
 
 .container header {
     background-color: darkorchid;
-    grid-column: 1 / -1;
+    grid-area: header;
+}
+
+.container aside {
+    background-color: darkslateblue;
+    grid-area: sidebar;
 }
 
 .container main {
-    background-color: darkslategray;
-    grid-column: span 2;
+    grid-area: content;
 }
 
 .container footer {
-    background-color: darkslateblue;
-    grid-column: 1 / -1;
+    background-color: darkorchid;
+    grid-area: footer;
 }
