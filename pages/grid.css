@@ -6,6 +6,8 @@
 body {
     margin: 0;
     padding: 8px;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 img {
@@ -16,6 +18,7 @@ img {
 .container {
     background-color: transparent;
     border: 2px solid white;
+    box-sizing: border-box;
     border-radius: 8px;
     overflow: hidden;
     
@@ -23,7 +26,7 @@ img {
     grid-auto-rows: 32px;
     grid-template-rows: repeat(5, 1fr); */
 
-    height: 92vh;
+    height: 100%;
 
     display: grid;
     grid-template-columns: repeat(3, 64px);
