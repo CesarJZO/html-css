@@ -19,7 +19,7 @@ img {
     grid-template-rows: repeat(5, 1fr); */
     display: grid;
     grid-template-columns: repeat(
-        auto-fit,
+        auto-fill,
         minmax(128px, 1fr)
     );
     /* grid-column-gap: 8px;
